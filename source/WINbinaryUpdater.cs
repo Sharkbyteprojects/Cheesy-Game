@@ -65,7 +65,7 @@ namespace CheesyGame.Updater
                         Console.WriteLine("Update available!\nTry Update");
                         updater.updater();
                     }else{
-                        Console.WriteLine("Skip Update");
+                        Console.WriteLine("You have the Latest version!");
                     }
                 }else{
                     Console.WriteLine("404 - Not Found");
