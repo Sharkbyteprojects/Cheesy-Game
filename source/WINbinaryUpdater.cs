@@ -46,6 +46,7 @@ namespace CheesyGame.Updater
             Console.WriteLine("<c> Sharkbyteprojects\nCheesyGame Updater");
             try{
                 WebClient client = new WebClient();
+				System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
                 Stream data = client.OpenRead(@"https://raw.githubusercontent.com/Sharkbyteprojects/Cheesy-Game/master/version.txt");
                 StreamReader reader = new StreamReader(data);
                 string s = reader.ReadToEnd();
